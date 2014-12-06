@@ -42,6 +42,17 @@ module.exports = function(grunt) {
           'assets/css/fonts.css': 'source/sass/fonts.scss'
         }
       }
+    },
+    postcss: {
+      options: {
+        processors: [
+          require('autoprefixer-core')({browsers: 'last 1 version'}).postcss,
+          require('csswring').postcss
+        ]
+      },
+      dist: {
+        src: 'assets/css/*.css'
+      }
     }
   });
 
@@ -50,7 +61,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-postcss');
 
   // Default task.
-  grunt.registerTask('default', ['clean', 'sass', 'concat', 'uglify']);
+  grunt.registerTask('default', ['clean', 'sass', 'postcss', 'concat', 'uglify']);
 };
