@@ -1,0 +1,11 @@
+@import "compass/css3";
+//@include font-face("Open Sans", inline-font-files('OpenSans-Regular.woff', woff), normal, 400);
+//@include font-face("Open Sans", inline-font-files('OpenSans-Bold.woff', woff), normal, 700);
+
+@include font-face("Open Sans", inline-font-files('opensans-regular-webfont.woff', woff), 'opensans-regular-webfont.eot');
+//@include font-face("Open Sans", inline-font-files('opensans_b.woff', woff), normal, 700);
+@include font-face("Open Sans", inline-font-files('opensans-bold-webfont.woff', woff), 'opensans-bold-webfont.eot', 700, bold);
+
+@include font-face("Lora", inline-font-files('lora-regular-webfont.woff', woff), 'lora-regular-webfont.eot');
+@include font-face("Lora", inline-font-files('lora-bold-webfont.woff', woff), 'lora-bold-webfont.eot', 700, bold);
+@include font-face("Lora", inline-font-files('lora-italic-webfont.woff', woff), 'lora-italic-webfont.eot', 400, italic);
