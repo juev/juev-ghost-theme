@@ -3,6 +3,8 @@
     the {body} of the default.hbs template, which contains our header/footer. }}
 <nav class="main-nav clearfix">
     <a class="back-button icon-arrow-left" href="{{@blog.url}}">Home</a>
+    <a class="back-button" href="{{@blog.url}}/recommendations/">Рекомендую</a>
+    <a class="back-button" href="{{@blog.url}}/support/">Поддержка</a>
     <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
 </nav>
 <main class="content" role="main">
@@ -25,7 +27,7 @@
             <section class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
                 <h4><a itemprop="url" href="http://denis.evsyukov.org"><span itemprop="name">{{name}}</span></a></h4>
                 <div class="author-meta">
-                  <span class="author-link"><a href="http://kontactr.com/user/Evsyukov" rel="nofollow">Написать письмо</a></span>
+                  <span class="author-link"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#100;&#101;&#110;&#105;&#115;&#64;&#101;&#118;&#115;&#121;&#117;&#107;&#111;&#118;&#46;&#111;&#114;&#103;" rel="nofollow">Написать письмо</a></span>
                 </div>
             </section>
         {{/author}}
